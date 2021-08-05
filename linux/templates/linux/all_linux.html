@@ -1,0 +1,20 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+<h1 id="blogtitle" class="font-weight-bold text-center">Linux</h1>
+<!--<h3 class="text-center mb-5"> photography_Caffeee has written {{ linuxs.count }} linux{{ linuxs.count|pluralize }}</h3>-->
+
+{% for linux in linuxs %}
+<div class="row justify-content-center my-3">
+  <div class="col-md-10">
+    <a href="{% url 'linux:detail' linux.id %}">
+      <h2>{{ linux.title }}</h2>
+    </a>
+    <h5 class="text-muted">{{ linux.date|date:'M d Y' }}</h5>
+    <p>{{ linux.description|striptags|truncatechars:100 }}</p>
+  </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}

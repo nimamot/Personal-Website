@@ -7,18 +7,67 @@
 
 <div class="row justify-content-center my-3">
   <div class="col-5">
-    <img src="{% static 'portfolio/grass.png' %}" class="img-fluid">
+    <center><img src="{% static 'portfolio/Bitomoji_70 copy.png' %}" class="img-fluid"></center>
   </div>
 </div>
 <div class="row justify-content-center mb-3">
   <div class="col-md-9 text-center">
-    <h1 id="hometext" class="font-weight-bold">photography_Caffeee</h1>
+    <h1 id="hometext" class="font-weight-bold">Nima Motieifard</h1>
   </div>
 </div>
-
-
-<h2 class="mt-5">Pictures</h2>
+<h2 class="mt-5"><i class="far fa-clipboard"></i> Certs_Notes</h2>
+<h3><a href={% url 'blog:all_blogs' %}>CCNA</a></h3>
+<h3><a href={% url 'linux:all_linux' %}>Ethical Hacking</a></h3>
+<h3><a href="https://honey-stay-5a5.notion.site/A-ff3ef1d90abb4b18a99ec9bd59f0aafe">Comptia A+(link to Notion)</a></h3>
 <hr>
+<h2 class="mt-5"><i class="fab fa-swift"></i> Real-time Messanger App( featured by <a href="https://brainstation.io">BrainStation</a>)</h2>
+<br>
+<h3>Features:</h3>
+<h4>&emsp;<i class="fas fa-comments"></i> Text, picture, video and location messages</h4>
+<h4>&emsp;<i class="far fa-envelope-open"></i> Email/pass registration and logIn</h4>
+<h4>&emsp;<i class="fas fa-trash-alt"></i> Delete messages</h4>
+<h4>&emsp;<i class="fas fa-search"></i> Search for other users</h4>
+
+<!--<div class="row">-->
+<!--     <div class="col-lg-4 col-md-6">-->
+<!--        <img src="{% static 'portfolio/ConversationView.jpg' %}" class="img-fluid mb-2">-->
+<!--    </div>-->
+<!--    <div class="col-lg-4 col-md-6">-->
+<!--        <img src="{% static 'portfolio/RegisterView_4_38.jpg' %}" class="img-fluid mb-2">-->
+<!--    </div>-->
+<!--</div-->
+
+<br>
+<h4><i class="fab fa-github"></i> GitHub: <a href="https://github.com/nimamot/Massenger">nimamot</a></h4>
+<br>
+<hr>
+
+
+<h2 class="mt-5"><i class="fab fa-python"></i> Python Projects</h2>
+<br>
+<h3>&emsp;<i class="fab fa-bitcoin"></i> Binance Console App</h3>
+<h4>&emsp; &emsp; Check the price for any Crypto.</h4>
+<h4>&emsp; &emsp; Check your Binance Wallet balance with your API Key.</h4>
+<h4>&emsp; &emsp; Place Limit/Market orders.</h4>
+<h4>&emsp; &emsp; Check your open orders.</h4>
+<h4>&emsp; &emsp;<i class="fab fa-github"></i> GitHub: <a href="https://github.com/nimamot/pyTools/blob/main/binance/binance01.py">nimamot</a></h4>
+<br>
+<br>
+<h3>&emsp;<i class="fas fa-pager"></i> Personal Website</h3>
+<h4>&emsp; &emsp; Powerd by Django, HTML, CSS, and <a href="https://www.pythonanywhere.com">Pythonanywhere</a>.</h4>
+<h4>&emsp; &emsp;<i class="fab fa-github"></i> GitHub: <a href="https://github.com/nimamot/Personal-Website">nimamot</a></h4>
+<br>
+<hr>
+
+<h2 class="mt-5"><i class="fab fa-spotify"></i> Spotify coding playlist</h2>
+<br>
+<iframe src="https://open.spotify.com/embed/playlist/1mZQms6Cf0vNPioC61bISW" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<br>
+<hr>
+
+<h2 class="mt-5"><i class="fas fa-camera-retro"></i> Photography  <a href="https://www.instagram.com/photography_cafeee/" target="blank"><i class="fab fa-instagram"></i></a> </h2>
+<br>
 <div class="row">
   {% for project in projects %}
   <div class="col-lg-4 col-md-6">
@@ -37,5 +86,4 @@
   </div>
   {% endfor %}
 </div>
-
 {% endblock %}
