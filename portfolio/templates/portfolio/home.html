@@ -18,14 +18,14 @@
 </div>
 <br>
 <br>
-<h2 class="mt-5"> Welcome to my personal website!</h2>
-<h3>My main goal for developing this website is to share my experience learning new things!
-<h3>I am currently a Computer Science student so a lot of the materials found here are CS related. That being said, not everything here is about CS.</h3>
-<h3>You can also find content about personal finance (investing, crypto, stock, NFT…) which is something that many people do not learn about in school or even in university!</h3>
-<h3>In addition, I have dedicated the last portion of this website to one of my favorite hobbies: photography.</h3>
+<!--<h2 class="mt-5"> Welcome to my personal website!</h2>-->
+<!--<h3>My main goal for developing this website is to share my experience learning new things!-->
+<!--<h3>I am currently a Computer Science student so a lot of the materials found here are CS related. That being said, not everything here is about CS.</h3>-->
+<!--<h3>You can also find content about personal finance (investing, crypto, stock, NFT…) which is something that many people do not learn about in school or even in university!</h3>-->
+<!--<h3>In addition, I have dedicated the last portion of this website to one of my favorite hobbies: photography.</h3>-->
 
 <br>
-<hr>
+
 
 <h1 class="mt-5"> Projects</h1>
 
@@ -67,6 +67,12 @@
 <h4>&emsp; &emsp;<i class="fab fa-github"></i> GitHub: <a href="https://github.com/nimamot/Personal-Website">nimamot</a></h4>
 <br>
 
+<h3>&emsp;<i class="fas fa-pager"></i> Notes Buddy</h3>
+<h4>&emsp; &emsp; <a href="http://3.86.117.52/wordpress/">Notes Buddy</a></h4>
+<h4>&emsp; &emsp; Powerd by AWS, Apache2, SQL, WordPress.</h4>
+<br>
+
+
 <h2 class="mt-5"><i class="fab fa-node-js"></i> Javascript Projects</h2>
 <br>
 <h3>&emsp; <i class="fas fa-pen"></i> Spanish learning Website( <i class="fas fa-spinner"></i> In Progress )</h3>
@@ -99,27 +105,27 @@
 <br>
 <br>
 
-<h2 class="mt-5"><i class="fas fa-camera-retro"></i> Photography  <a href="https://www.instagram.com/photography_cafeee/" target="blank"><i class="fab fa-instagram"></i></a> </h2>
-<br>
-<div class="row">
-  {% for project in projects %}
-  <div class="col-lg-4 col-md-6">
+<!--<h2 class="mt-5"><i class="fas fa-camera-retro"></i> Photography  <a href="https://www.instagram.com/photography_cafeee/" target="blank"><i class="fab fa-instagram"></i></a> </h2>-->
+<!--<br>-->
+<!--<div class="row">-->
+<!--  {% for project in projects %}-->
+<!--  <div class="col-lg-4 col-md-6">-->
 
-    {% if project.url %}
-    <a href="{{ project.url }}">
-      <img src="{{ project.image.url }}" class="img-fluid mb-2">
-    </a>
-    {% else %}
+<!--    {% if project.url %}-->
+<!--    <a href="{{ project.url }}">-->
+<!--      <img src="{{ project.image.url }}" class="img-fluid mb-2">-->
+<!--    </a>-->
+<!--    {% else %}-->
 
-    <img src="{{ project.image.url }}" class="img-fluid mb-2">
-    {% endif %}
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.description }}</p>
+<!--    <img src="{{ project.image.url }}" class="img-fluid mb-2">-->
+<!--    {% endif %}-->
+<!--    <h3>{{ project.title }}</h3>-->
+<!--    <p>{{ project.description }}</p>-->
 
-  </div>
-  {% endfor %}
-  <hr>
-</div>
+<!--  </div>-->
+<!--  {% endfor %}-->
+<!--  <hr>-->
+<!--</div>-->
 
 
 {% endblock %}

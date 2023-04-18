@@ -10,6 +10,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 #blogtitle {
     font-size: 6rem;
 }
@@ -32,3 +36,5 @@ body {
     position: absolute;
     bottom: 0;
 }
+
+
